@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/* dibuat nurul untuk dashboard */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+body {
+    background: rgb(226, 226, 226);
+}
+
+h1 {
+    font-family: pacifico;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 50px;
+    color: #9FC088;
+}
+
+
+/* side nav*/
+
+nav {
+    position: fixed;
+    top: 30px;
+    bottom: 0;
+    height: 800px;
+    left: 0;
+    /* width: 90px; */
+    width: 275px;
+    background: #ffffff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.p {
+    position: relative;
+    width: 280%;
+    /* color: #9FC088; */
+    color: rgb(85, 83, 83);
+    display: table;
+    padding: 10px;
+}
+
+.profil {
+    border-bottom: 2px solid rgba(40, 40, 40, 0.358);
+}
+
+.foto-profil {
+    margin-top: -30px;
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+}
+
+.foto-profil:hover {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+nav .fas {
+    position: relative;
+    width: 70px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.nav-item {
+    position: relative;
+    margin-left: 10x;
+}
+
+li {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+li:hover {
+    background-color: rgb(237, 237, 237);
+    transition: 0.25s;
+}
+
+li.active {
+    background-color: rgb(237, 237, 237);
+}
+
+a:hover i {
+    color: #9FC088;
+    transition: 0.25s;
+}
+
+.container {
+    margin-top: 35px;
+    margin-left: 275px;
+}
+
+
+/*editprofil*/
+
+.form-input {
+    color: rgb(68, 68, 68);
+    margin-top: -2.7px;
+    margin-bottom: 0.75cm;
+    display: block;
+    width: 400px;
+    padding: 0.375rem 0.75rem;
+    line-height: 0.7cm;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.register-btn {
+    border: 0px;
+    padding-top: 0.27cm;
+    padding-bottom: 0.27cm;
+    padding-left: 0.55cm;
+    padding-right: 0.55cm;
+    border-radius: 0.1cm;
+    background-color: #9FC088;
+    color: white
+}
+
+.register-btn:hover {
+    transition: 0.4s;
+    border-radius: 0.1cm;
+    background-color: #87a573;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+input:hover+label,
+input:focus+label {
+    transform: scale(1.02);
+}
+
+.file {
+    opacity: 0;
+    width: 0.1px;
+    height: 0.1px;
+    position: absolute;
+}
+
+
+/*content*/
+
+.main {
+    position: relative;
+    padding: 20px;
+}
+
+.main .users {
+    display: flex;
+    width: 100%;
+}
+
+.users .tampilan {
+    width: 25%;
+    margin: 10px;
+    background: #ffffff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+}
+
+.users .tampilan img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.users .tampilan h4 {
+    text-transform: uppercase;
+}
+
+.users .per span {
+    padding: 5px;
+    border-radius: 10px;
+    background: rgb(223, 223, 223);
+}
+
+.users td {
+    font-size: 14px;
+    padding-right: 15px;
+}
+
+.users .tampilan button {
+    position: relative;
+    bottom: 5px;
+    width: 100%;
+    margin-top: 8px;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    background: transparent;
+    border: 1px solid #9FC088;
+}
+
+.users .tampilan button:hover {
+    background: #9FC088;
+    color: #ffffff;
+    transition: 00.5s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.pilih:hover {
+    color: #9FC088;
+    transition: .25s;
+}
+
+
+/* top nav */
+
+.mainn {
+    margin-top: 60px;
+}
+
+.topnav {
+    background-color: #9FC088;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.topnav a {
+    display: block;
+    margin-left: 0.1cm;
+    margin-right: 0.1cm;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 8px 8px;
+    text-decoration: none;
+    width: 2.42cm;
+}
+
+.topnav a:hover {
+    transition: 0.4s;
+    border-radius: 0.3cm;
+    background-color: #87a573;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.topnav a.active {
+    border-radius: 0.3cm;
+    background-color: #87a573;
+    color: rgb(255, 255, 255);
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .2);
+}
+
+.topnav a.split {
+    float: right;
+}
+
+
+/* table pengepul*/
+
+#pul {
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+}
+
+#pul td,
+#pul th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#pul tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#pul tr:nth-child(odd) {
+    background-color: white;
+}
+
+#pul tr:hover {
+    background-color: #ddd;
+}
+
+#pul th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9FC088;
+    color: white;
+}
+
+.submit-btn {
+    border: 0px;
+    padding-top: 0.27cm;
+    padding-bottom: 0.27cm;
+    padding-left: 0.55cm;
+    padding-right: 0.55cm;
+    border-radius: 0.1cm;
+    background-color: #9FC088;
+    color: white
+}
+
+.submit-btn:hover {
+    transition: 0.4s;
+    border-radius: 0.1cm;
+    background-color: #87a573;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.form-input {
+    color: rgb(68, 68, 68);
+    margin-top: -2.7px;
+    margin-bottom: 0.75cm;
+    display: block;
+    width: 400px;
+    padding: 0.375rem 0.75rem;
+    line-height: 0.7cm;
+    background-color: rgb(255, 255, 255);
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.check {
+    color: rgb(225, 62, 62);
+    cursor: pointer;
+    background-color: rgba(221, 221, 221, 0);
+    transition: 0.20s;
+}
+
+.check:hover {
+    color: #9FC088;
+    background-color: #ddd;
+    transition: 0.20s;
+}
+
+.loc {
+    color: black;
+    cursor: pointer;
+    background-color: rgba(221, 221, 221, 0);
+    transition: 0.20s;
+}
+
+.loc:hover {
+    color: #9FC088;
+    background-color: #ddd;
+    transition: 0.20s;
+}
+
+.delete {
+    color: black;
+    cursor: pointer;
+    background-color: rgba(221, 221, 221, 0);
+    transition: 0.20s;
+}
+
+.delete:hover {
+    color: rgb(225, 62, 62);
+    background-color: #ddd;
+    transition: 0.20s;
+}
